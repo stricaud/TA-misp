@@ -1,0 +1,6 @@
+[]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 7.0.0
+modtime = 1514351762.839797000

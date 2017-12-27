@@ -1,0 +1,6 @@
+<nav search_view="search" color="#00b6ea">
+  <view name="status" default="true" />
+  <view name="logs" />
+  <view name="documentation" />
+  <view name="search" />
+</nav>

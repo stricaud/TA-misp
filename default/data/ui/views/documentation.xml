@@ -1,0 +1,22 @@
+<dashboard>
+  <label>Documentation</label>
+  <row>
+    <panel>
+      <html>
+        <h1>MISP Technology Add-on</h1>
+        <p>It allows a tight integration between the <a href="https://www.misp.software/">Open Source Threat Intelligence Platform</a> and Splunk.</p>
+        <h2>How?</h2>
+        <p>
+          <ul>
+            <li>At first start, it fetches the last <b>120 days</b> worth of data stored on your MISP installation to create CSV lookups. Why CSV lookup? to have the Splunk native way to match between attributes from MISP objects and Splunk events</li>
+            <li>Every configurable amount of minutes (see <b>props.conf</b>, <i>interval</i> option), it pulls new events and add them to the existing CSV lookup</li>
+            <li>Every single event is enriched with <b>misp_category</b>, <b>misp_event_uuid</b> and the matching field. We strongly encourage you to add the sourcetype stanza to enrich only the sourcetypes that need to be.</li>
+            <li>Generated CSV lookups are shared to anyone needing them</li>
+          </ul>
+        </p>
+        <h2>Checking if an event field matches an attribute in MISP</h2>
+        <p>Any event containing the <b>misp_category</b> or <b>misp_event_uuid</b> means they match.</p>
+      </html>
+    </panel>
+  </row>
+</dashboard>
