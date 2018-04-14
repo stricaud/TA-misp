@@ -1,0 +1,25 @@
+{
+  "extra_link_args": [
+    "-Wl,-rpath", 
+    "-Wl,/Users/stricaud/git/TA-misp/bin/darwin_x86_64/lib"
+  ], 
+  "define_macros": [
+    [
+      "HAVE_SYS_UN_H", 
+      1
+    ]
+  ], 
+  "runtime_library_dirs": [], 
+  "libraries": [
+    "zmq"
+  ], 
+  "library_dirs": [
+    "../darwin_x86_64/lib"
+  ], 
+  "include_dirs": [
+    "../darwin_x86_64/include", 
+    "zmq/utils", 
+    "zmq/backend/cython", 
+    "zmq/devices"
+  ]
+}
